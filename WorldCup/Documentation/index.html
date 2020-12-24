@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Tumar - Documentation</title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- styles -->
+		<link href="../Tumar/assets/css/plugins.css" rel="stylesheet">
+		<link href="../Tumar/assets/css/style.css" rel="stylesheet">
+		<link href="css/prettify.css" rel="stylesheet">
+		<link href="css/theme.css" rel="stylesheet">
+	</head>
+
+	<body class="section-bg-light">
+		<div class="doc-nav">
+			<ul class="container">
+				<li><a href="#tumar">Tumar Documentation</a></li>
+				<li><a href="#html">1. HTML Structure</a></li>
+				<li><a href="#css">2. CSS files</a></li>
+				<li><a href="#javascript">3. JavaScript</a></li>
+				<li><a href="#credits">4. Credits</a></li>
+				<li><a href="#support">5. Support</a></li>
+			</ul>
+		</div>
+
+		<section id="tumar" class="doc-bg doc-margin">
+			<div class="container small padding-top-bottom-120">
+				<h2 class="headline-m text-center text-color-black">Tumar HTML5 Template Documentation</h2>
+				<p class="body-text-m text-center text-color-black margin-top-30">Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/jinnagik" target="_blank" style="font-weight: 900">here</a>. Thanks so much!</p>
+			</div>
+		</section>
+
+		<section id="html" class="padding-top-120 container">
+			<div class="padding-bottom-60 text-center">
+				<h4 class="headline-xs text-color-black">1. HTML Structure</h4>
+				<p class="body-text-s text-color-black margin-top-10">The body part of the Html file is divided in four main sections: header, nav, main and footer.</p>
+			</div>
+
+			<h4 class="headline-xxxs text-color-black">HEADER</h4>
+			<p class="body-text-s text-color-black">Header HTML structure:</p>
+	<pre class="prettyprint linenums">
+&lt;!-- header start --&gt;
+&lt;header class=&quot;fixed-header&quot;&gt;
+    &lt;!-- logo start --&gt;
+    &lt;div class=&quot;header-logo&quot;&gt;
+        &lt;a href=&quot;index.html&quot; class=&quot;header-logo__box js-pointer-large js-animsition-link&quot;&gt;
+            &lt;img class=&quot;header-logo__img&quot; src=&quot;assets/images/logo/logo.png&quot; alt=&quot;logo&quot;&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;&lt;!-- logo end --&gt;
+
+    &lt;!-- menu-icon start --&gt;
+    &lt;div class=&quot;menu-icon js-menu-open-close js-pointer-large&quot;&gt;
+        &lt;div class=&quot;menu-icon__box&quot;&gt;
+            &lt;span class=&quot;menu-icon__inner&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;menu-icon__close&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- menu-icon end --&gt;
+&lt;/header&gt;&lt;!-- header end --&gt;
+</pre>
+
+			<h4 class="headline-xxxs text-color-black padding-top-60">NAV</h4>
+			<p class="body-text-s text-color-black">Nav HTML structure:</p>
+	<pre class="prettyprint linenums">
+&lt;!-- navigation overlay --&gt;
+&lt;div class=&quot;nav-overlay&quot;&gt;&lt;/div&gt;
+&lt;!-- navigation start --&gt;
+&lt;nav class=&quot;nav-container js-dropdown-active-box&quot;&gt;
+    &lt;!-- nav-box start --&gt;
+    &lt;div class=&quot;container small nav-box&quot;&gt;
+        &lt;!-- dropdown close btn start --&gt;
+        &lt;div class=&quot;dropdown-close&quot;&gt;
+            &lt;div class=&quot;dropdown-close__inner js-dropdown-close js-pointer-large&quot;&gt;
+                &lt;span class=&quot;dropdown-close__arrow&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- dropdown close btn end --&gt;
+
+        &lt;!-- menu-box start --&gt;
+        &lt;ul class=&quot;menu-box nav-bg-overlay-box&quot;&gt;
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-nav-bg-change js-nav-bg-active&quot;&gt;
+                &lt;a href=&quot;index.html&quot; class=&quot;nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Home&quot;&gt;Home&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;div class=&quot;nav-bg-box&quot;&gt;
+                    &lt;div class=&quot;nav-bg&quot; style=&quot;background-image: url(assets/images/menu/bonnet-casual-close-up-2802601.jpg);&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-nav-bg-change&quot;&gt;
+                &lt;a href=&quot;about.html&quot; class=&quot;nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;About&quot;&gt;About&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;div class=&quot;nav-bg-box&quot;&gt;
+                    &lt;div class=&quot;nav-bg&quot; style=&quot;background-image: url(assets/images/menu/pexels-marlene-1019771.jpg);&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-nav-bg-change&quot;&gt;
+                &lt;a href=&quot;services.html&quot; class=&quot;nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Services&quot;&gt;Services&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;div class=&quot;nav-bg-box&quot;&gt;
+                    &lt;div class=&quot;nav-bg&quot; style=&quot;background-image: url(assets/images/menu/two-vases-on-table-842950.jpg);&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-nav-bg-change js-dropdown-open&quot;&gt;
+                &lt;a class=&quot;nav-btn dropdown-hidden-btn js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Portfolio&quot;&gt;Portfolio&lt;/span&gt;
+                &lt;/a&gt;
+
+                &lt;!-- dropdown start --&gt;
+                &lt;ul class=&quot;menu-box dropdown js-dropdown&quot;&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_fullscreen.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Fullscreen&quot;&gt;Fullscreen&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_carousel.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Carousel&quot;&gt;Carousel&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_grid-3-col.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Grid 3 Col&quot;&gt;Grid 3 Col&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_flex-columns.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Flex Columns&quot;&gt;Flex Columns&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-btn-box&quot;&gt;
+                        &lt;a href=&quot;portfolio_creative-grid.html&quot; class=&quot;nav-btn js-animsition-link js-pointer-large&quot;&gt;
+                            &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Creative Grid&quot;&gt;Creative Grid&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;&lt;!-- dropdown end --&gt;
+
+                &lt;div class=&quot;nav-bg-box&quot;&gt;
+                    &lt;div class=&quot;nav-bg&quot; style=&quot;background-image: url(assets/images/menu/goashape-RvyJGaoaWrs-unsplash.jpg);&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-nav-bg-change&quot;&gt;
+                &lt;a href=&quot;blog.html&quot; class=&quot;nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Blog&quot;&gt;Blog&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;div class=&quot;nav-bg-box&quot;&gt;
+                    &lt;div class=&quot;nav-bg&quot; style=&quot;background-image: url(assets/images/menu/face-facial-hair-fashionable-2555100.jpg);&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+
+            &lt;!-- nav-btn-box start --&gt;
+            &lt;li class=&quot;nav-btn-box js-nav-bg-change&quot;&gt;
+                &lt;a href=&quot;contact.html&quot; class=&quot;nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large&quot;&gt;
+                    &lt;span class=&quot;nav-btn__inner&quot; data-text=&quot;Contact&quot;&gt;Contact&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;div class=&quot;nav-bg-box&quot;&gt;
+                    &lt;div class=&quot;nav-bg&quot; style=&quot;background-image: url(assets/images/menu/architectural-design-architecture-building-exterior-1707823.jpg);&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;&lt;!-- nav-btn-box end --&gt;
+        &lt;/ul&gt;&lt;!-- menu-box end --&gt;
+    &lt;/div&gt;&lt;!-- nav-box end --&gt;
+&lt;/nav&gt;&lt;!-- navigation end --&gt;
+</pre>
+
+			<h4 class="headline-xxxs text-color-black padding-top-60">MAIN</h4>
+			<p class="body-text-s text-color-black">Main HTML structure:</p>
+	<pre class="prettyprint linenums">
+&lt;!-- main start --&gt;
+&lt;main class=&quot;main-content&quot;&gt;
+    &lt;!-- page head start --&gt;
+    &lt;section id=&quot;up&quot; class=&quot;section-bg-dark&quot; data-scroll-section&gt;
+        &lt;!-- home slider start --&gt;
+        &lt;div class=&quot;pos-rel hidden-box js-home-slider page-head-footer-overlay-fix&quot; data-scroll data-scroll-repeat&gt;
+            &lt;!-- swiper-wrapper start --&gt;
+            &lt;div class=&quot;swiper-wrapper&quot;&gt;
+                &lt;!-- swiper-slide start --&gt;
+                &lt;div class=&quot;swiper-slide&quot;&gt;
+                    &lt;!-- background start --&gt;
+                    &lt;div class=&quot;js-parallax-slide-bg&quot;&gt;
+                        &lt;div class=&quot;bg-img-cover height-100perc&quot; style=&quot;background-image: url(assets/images/backgrounds/revolt-BMest61rcqs-unsplash.jpg);&quot; data-scroll data-scroll-speed=&quot;-3&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- background end --&gt;
+
+                    &lt;!-- bg-overlay --&gt;
+                    &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+
+                    &lt;!-- content start --&gt;
+                    &lt;div class=&quot;flex-min-height-100vh&quot;&gt;
+                        &lt;div class=&quot;container small padding-top-bottom-150 text-center&quot;&gt;
+                            &lt;div&gt;
+                                &lt;div class=&quot;max-width-600 d-inline-block&quot;&gt;
+                                    &lt;h2 class=&quot;headline-l headline-uppercase anim-split-lines&quot;&gt;
+                                        We Generate
+                                        &lt;span class=&quot;text-stroke-white&quot;&gt;Creative&lt;/span&gt; &
+                                        Novation &lt;span class=&quot;text-stroke-white&quot;&gt;Ideas&lt;/span&gt;
+                                    &lt;/h2&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;margin-top-30 anim-fade-to-top&quot;&gt;
+                                &lt;div data-scroll data-scroll-speed=&quot;-0.5&quot; data-scroll-position=&quot;top&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;border-btn js-pointer-large&quot;&gt;
+                                        &lt;span class=&quot;border-btn__inner&quot;&gt;Read more&lt;/span&gt;
+                                        &lt;span class=&quot;border-btn__lines-1&quot;&gt;&lt;/span&gt;
+                                        &lt;span class=&quot;border-btn__lines-2&quot;&gt;&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- content end --&gt;
+                &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+
+                &lt;!-- swiper-slide start --&gt;
+                &lt;div class=&quot;swiper-slide&quot;&gt;
+                    &lt;!-- background start --&gt;
+                    &lt;div class=&quot;js-parallax-slide-bg&quot;&gt;
+                        &lt;div class=&quot;bg-img-cover height-100perc&quot; style=&quot;background-image: url(assets/images/backgrounds/roman-bozhko-PypjzKTUqLo-unsplash.jpg);&quot; data-scroll data-scroll-speed=&quot;-3&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- background end --&gt;
+
+                    &lt;!-- bg-overlay --&gt;
+                    &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+
+                    &lt;!-- content start --&gt;
+                    &lt;div class=&quot;flex-min-height-100vh&quot;&gt;
+                        &lt;div class=&quot;container small padding-top-bottom-150&quot;&gt;
+                            &lt;div&gt;
+                                &lt;div class=&quot;max-width-600 d-inline-block&quot;&gt;
+                                    &lt;h2 class=&quot;headline-l headline-uppercase anim-split-lines&quot;&gt;
+                                        We’r Provided
+                                        &lt;span class=&quot;text-stroke-white&quot;&gt;Best&lt;/span&gt; Digital
+                                        &lt;span class=&quot;text-stroke-white&quot;&gt;Services&lt;/span&gt;
+                                    &lt;/h2&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;margin-top-30 anim-fade-to-top&quot;&gt;
+                                &lt;div data-scroll data-scroll-speed=&quot;-0.5&quot; data-scroll-position=&quot;top&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;border-btn js-pointer-large&quot;&gt;
+                                        &lt;span class=&quot;border-btn__inner&quot;&gt;Read more&lt;/span&gt;
+                                        &lt;span class=&quot;border-btn__lines-1&quot;&gt;&lt;/span&gt;
+                                        &lt;span class=&quot;border-btn__lines-2&quot;&gt;&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- content end --&gt;
+                &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+
+                &lt;!-- swiper-slide start --&gt;
+                &lt;div class=&quot;swiper-slide&quot;&gt;
+                    &lt;!-- background start --&gt;
+                    &lt;div class=&quot;js-parallax-slide-bg&quot;&gt;
+                        &lt;div class=&quot;bg-img-cover height-100perc&quot; style=&quot;background-image: url(assets/images/backgrounds/karsten-winegeart-WO_th3WRJvw-unsplash.jpg);&quot; data-scroll data-scroll-speed=&quot;-3&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- background end --&gt;
+
+                    &lt;!-- bg-overlay --&gt;
+                    &lt;div class=&quot;bg-overlay-black&quot;&gt;&lt;/div&gt;
+
+                    &lt;!-- content start --&gt;
+                    &lt;div class=&quot;flex-min-height-100vh&quot;&gt;
+                        &lt;div class=&quot;container small padding-top-bottom-150&quot;&gt;
+                            &lt;div&gt;
+                                &lt;div class=&quot;max-width-600 d-inline-block&quot;&gt;
+                                    &lt;h2 class=&quot;headline-l headline-uppercase anim-split-lines&quot;&gt;
+                                        &lt;span class=&quot;text-stroke-white&quot;&gt;Best&lt;/span&gt; Solutions
+                                        & &lt;span class=&quot;text-stroke-white&quot;&gt;Ideas&lt;/span&gt; for
+                                        Your Business
+                                    &lt;/h2&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;margin-top-30 anim-fade-to-top&quot;&gt;
+                                &lt;div data-scroll data-scroll-speed=&quot;-0.5&quot; data-scroll-position=&quot;top&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;border-btn js-pointer-large&quot;&gt;
+                                        &lt;span class=&quot;border-btn__inner&quot;&gt;Read more&lt;/span&gt;
+                                        &lt;span class=&quot;border-btn__lines-1&quot;&gt;&lt;/span&gt;
+                                        &lt;span class=&quot;border-btn__lines-2&quot;&gt;&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- content end --&gt;
+                &lt;/div&gt;&lt;!-- swiper-slide end --&gt;
+            &lt;/div&gt;&lt;!-- swiper-wrapper end --&gt;
+
+            &lt;!-- swiper-button-prev start --&gt;
+            &lt;div class=&quot;swiper-button-prev-box after-preloader-anim&quot;&gt;
+                &lt;div class=&quot;anim-fade-to-right tr-delay-03&quot;&gt;
+                    &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- swiper-button-prev end --&gt;
+            &lt;!-- swiper-button-next start --&gt;
+            &lt;div class=&quot;swiper-button-next-box after-preloader-anim&quot;&gt;
+                &lt;div class=&quot;anim-fade-to-left tr-delay-03&quot;&gt;
+                    &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- swiper-button-next end --&gt;
+
+            &lt;!-- swiper-pagination start --&gt;
+            &lt;div class=&quot;pagination-box vertical-pagination after-preloader-anim&quot;&gt;
+                &lt;div class=&quot;anim-fade-to-top d-block tr-delay-06&quot;&gt;
+                    &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- swiper-pagination end --&gt;
+
+            &lt;!-- to top btn start --&gt;
+            &lt;a href=&quot;#down&quot; class=&quot;scroll-to-btn to-down js-pointer-large&quot; data-scroll-to&gt;
+                &lt;div class=&quot;scroll-to-down-box&quot;&gt;
+                    &lt;span class=&quot;scroll-to-btn__arrow&quot;&gt;&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;&lt;!-- to top btn end --&gt;
+        &lt;/div&gt;&lt;!-- home slider end --&gt;
+    &lt;/section&gt;&lt;!-- page head end --&gt;
+
+    ...
+
+&lt;/main&gt;&lt;!-- main end --&gt;
+</pre>
+
+			<h4 class="headline-xxxs text-color-black padding-top-60">FOOTER</h4>
+			<p class="body-text-s text-color-black">Footer HTML structure:</p>
+	<pre class="prettyprint linenums">
+&lt;!-- footer start --&gt;
+&lt;footer class=&quot;section-bg-dark&quot; data-scroll-section&gt;
+    &lt;!-- container start --&gt;
+    &lt;div class=&quot;container padding-top-bottom-30&quot; data-scroll data-scroll-speed=&quot;-4&quot; data-scroll-position=&quot;bottom&quot;&gt;
+        &lt;!-- flex-container start --&gt;
+        &lt;div class=&quot;flex-container flex-align-center&quot;&gt;
+            &lt;!-- column start --&gt;
+            &lt;div class=&quot;eight-columns padding-top-90&quot;&gt;
+                &lt;h4 class=&quot;column-l-r-margin-10 headline-s headline-uppercase&quot;&gt;
+                    The Best&lt;br&gt;
+                    Agency for&lt;br&gt;
+                    Your Businnes
+                &lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- column end --&gt;
+
+            &lt;!-- column start --&gt;
+            &lt;div class=&quot;four-columns padding-top-90&quot;&gt;
+                &lt;ul class=&quot;column-l-r-margin-10 list&quot;&gt;
+                    &lt;li class=&quot;list__item&quot;&gt;
+                        &lt;a href=&quot;index.html&quot; class=&quot;footer-nav-btn js-pointer-small js-animsition-link&quot;&gt;Home&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;list__item&quot;&gt;
+                        &lt;a href=&quot;about.html&quot; class=&quot;footer-nav-btn js-pointer-small js-animsition-link&quot;&gt;About&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;list__item&quot;&gt;
+                        &lt;a href=&quot;services.html&quot; class=&quot;footer-nav-btn js-pointer-small js-animsition-link&quot;&gt;Services&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;list__item&quot;&gt;
+                        &lt;a href=&quot;portfolio_fullscreen.html&quot; class=&quot;footer-nav-btn js-pointer-small js-animsition-link&quot;&gt;Portfolio&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;list__item&quot;&gt;
+                        &lt;a href=&quot;blog.html&quot; class=&quot;footer-nav-btn js-pointer-small js-animsition-link&quot;&gt;Blog&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;list__item&quot;&gt;
+                        &lt;a href=&quot;contact.html&quot; class=&quot;footer-nav-btn js-pointer-small js-animsition-link&quot;&gt;Contact&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;&lt;!-- column end --&gt;
+        &lt;/div&gt;&lt;!-- flex-container end --&gt;
+
+        &lt;!-- flex-container start --&gt;
+        &lt;div class=&quot;flex-container padding-top-30&quot;&gt;
+            &lt;!-- column start --&gt;
+            &lt;div class=&quot;four-columns padding-top-60&quot;&gt;
+                &lt;div class=&quot;column-l-r-margin-10&quot;&gt;
+                    &lt;div class=&quot;headline-xxxxs&quot;&gt;Email:&lt;/div&gt;
+                    &lt;div class=&quot;margin-top-20&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;line-btn js-pointer-small&quot;&gt;email@tumar_agency.com&lt;/a&gt;
+                        &lt;div class=&quot;margin-top-5&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;line-btn js-pointer-small&quot;&gt;email@tumar_job.com&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- column end --&gt;
+
+            &lt;!-- column start --&gt;
+            &lt;div class=&quot;four-columns padding-top-60&quot;&gt;
+                &lt;div class=&quot;column-l-r-margin-10&quot;&gt;
+                    &lt;div class=&quot;headline-xxxxs&quot;&gt;Phone:&lt;/div&gt;
+                    &lt;div class=&quot;margin-top-20&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small&quot;&gt;+23 8 8532 7834&lt;/a&gt;
+                        &lt;div class=&quot;margin-top-5&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small&quot;&gt;+23 8 9635 7335&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- column end --&gt;
+
+            &lt;!-- column start --&gt;
+            &lt;div class=&quot;four-columns padding-top-60&quot;&gt;
+                &lt;div class=&quot;column-l-r-margin-10&quot;&gt;
+                    &lt;div class=&quot;headline-xxxxs&quot;&gt;Address:&lt;/div&gt;
+                    &lt;div class=&quot;margin-top-20&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small&quot;&gt;
+                            PO Box 223158 Oliver Street&lt;br&gt;
+                            East Victoria 2006 UK
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- column end --&gt;
+
+            &lt;!-- column start --&gt;
+            &lt;div class=&quot;twelve-columns padding-top-90&quot;&gt;
+                &lt;div class=&quot;column-l-r-margin-10 padding-top-30 pos-rel&quot;&gt;
+                    &lt;div class=&quot;anim-line-top&quot; data-scroll data-scroll-offset=&quot;5%&quot;&gt;&lt;/div&gt;
+                    &lt;!-- footer-social start --&gt;
+                    &lt;ul class=&quot;list list_row list_margin-30px&quot;&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-splitting&gt;Facebook&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-splitting&gt;Dribbble&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-splitting&gt;Instagram&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-splitting&gt;Youtube&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-splitting&gt;Behance&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;list__item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;flip-btn js-pointer-small&quot; data-splitting&gt;Twitter&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;&lt;!-- footer-social end --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- column end --&gt;
+
+            &lt;!-- column start --&gt;
+            &lt;div class=&quot;twelve-columns padding-top-120&quot;&gt;
+                &lt;div class=&quot;column-l-r-margin-10 pos-rel&quot;&gt;
+                    &lt;p class=&quot;copyright margin-right-30&quot;&gt;
+                        &copy; Copyright 2020 TUMAR. Template by &lt;a href=&quot;#&quot; class=&quot;copyright__author js-pointer-small&quot;&gt;Jinna Gik&lt;/a&gt;
+                    &lt;/p&gt;
+                    &lt;!-- to top btn start --&gt;
+                    &lt;a href=&quot;#up&quot; class=&quot;scroll-to-btn js-pointer-large&quot; data-scroll data-scroll-repeat data-scroll-to&gt;
+                        &lt;span class=&quot;scroll-to-btn__arrow&quot;&gt;&lt;/span&gt;
+                    &lt;/a&gt;&lt;!-- to top btn end --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- column end --&gt;
+        &lt;/div&gt;&lt;!-- flex-container end --&gt;
+    &lt;/div&gt;&lt;!-- container end --&gt;
+&lt;/footer&gt;&lt;!-- footer end --&gt;
+</pre>
+
+			<h4 class="headline-xxxs text-color-black padding-top-60">GRID</h4>
+			<p class="body-text-s text-color-black">GRID structure:</p>
+	<pre class="prettyprint linenums">
+&lt;div class=&quot;flex-container&quot;&gt;
+    &lt;div class=&quot;two-columns&quot;&gt;
+        Content
+    &lt;/div&gt;
+    &lt;div class=&quot;three-columns&quot;&gt;
+        Content
+    &lt;/div&gt;
+    &lt;div class=&quot;four-columns&quot;&gt;
+        Content
+    &lt;/div&gt;
+    &lt;div class=&quot;three-columns&quot;&gt;
+        Content
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</section>
+
+		<section id="css" class="padding-top-120 container">
+			<div class="text-center">
+				<h4 class="headline-xs text-color-black">2. CSS files</h4>
+				<p class="body-text-s text-color-black margin-top-10">Main css files like style.css are located in css folder.</p>
+			</div>
+	<pre class="prettyprint">
+<span class="pln">assets</span><span class="pun">/</span><span class="pln"></span>
+    <span class="pun">├──</span><span class="pln"> ajax</span>
+    <span class="pun">├──</span><span class="pln"> css</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> plugins.css</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> style.css</span>
+    <span class="pun">├──</span><span class="pln"> images</span>
+    <span class="pun">├──</span><span class="pln"> js</span>
+    <span class="pun">├──</span><span class="pln"> webfonts</span>
+</pre>
+			<p class="body-text-s text-color-black padding-top-30 text-center">File <span class="text-color-red">/assets/css/style.css</span> contains all stylings for the template. At the begining of the file is a table of contents. This is a place where you can edit styling. I suggest you overide default template style at the end of this file.</p>
+	<pre class="prettyprint linenums">
+/* ==========================================================================
+
+   Table of content:
+
+   1. Basics
+   2. Helpers
+      2.1. Border radius
+      2.2. Width & height
+      2.3. Z-index
+      2.4. Background cover
+      2.5. Display settings
+      2.6. Paddings & margins
+      2.7. Positions
+   3. Container width
+   4. Flex grid
+      4.1. Flex column margins
+   5. Min-height flex center
+   6. Colors
+      6.1. Background colors
+      6.2. Text colors
+      6.3. Text hover colors
+      6.4. Half background
+         6.4.1. Half background borders fix
+   7. Animsition preloader
+      7.1. Preloader in/out
+      7.2. Preloader loading
+         7.2.1. Preloader loading dots animation
+   8. Custom mouse cursor
+   9. Header
+      9.1. Header logo
+      9.2. Navigation open button
+      9.3. Navigation close button
+   10. Navigation
+      10.1. Navigation menu box
+      10.2. Navigation buttons
+         10.2.1. Navigation active buttons
+         10.2.2. Navigation active page out buttons
+         10.2.3. Navigation buttons style
+         10.2.4. Navigation buttons hover effect
+      10.3. Navigation drop down
+         10.3.1. Navigation drop down close button
+         10.3.2. Navigation drop down menu
+      10.4. Navigation backgrounds
+         10.4.1. Navigation backgrounds overlay
+   11. Footer
+   12. Magnific popup
+      12.1. Popup counter
+      12.2. Popup close button
+   13. Swiper & popup arrows
+      13.1. Popup arrows
+      13.2. Swiper arrows
+      13.3. Swiper & popup arrows animations
+   14. Swiper pagination
+      14.1. Dynamic pagination
+      14.2. Counter pagination
+         14.2.1. Counter pagination vertical
+   15. Swiper sliders
+   16. Scroll to buttons
+      16.1. To top button
+      16.2. Scroll down button
+   17. Buttons
+      17.1. Skew button
+      17.2. Border button
+      17.3. Flip button
+      17.4. Line button
+      17.5. Play button
+   18. Typography
+      18.1. Big head
+      18.2. Headline
+      18.3. Subhead
+      18.4. Body text
+      18.5. Quote
+   19. Animations
+      19.1. Animation delays
+      19.2. Scale animation
+      19.3. Text slide animation
+      19.4. Fade animation
+      19.5. Opacity scale animation
+      19.6. Slider fade animation
+      19.7. Video reveal animation
+      19.8. Image reveal animation
+      19.9. Stroke animation
+      19.10. Chars blur animation
+      19.11. Chars fade in animation
+      19.12. Split lines slide animation
+      19.13. Top/bottom lines animation
+   20. Hover effects
+      20.1. Slide hover
+      20.2. Stroke hover
+      20.3. Image hover scale
+   21. Title offset
+   22. Forms
+      22.1. Label
+      22.2. Input
+      22.3. Contact form alert
+   23. Post comments
+   24. List styles
+      24.1. List item
+         24.1.1. List item margins
+         24.1.2. List item icons
+      24.2. List counter
+   25. Isotope grid
+   26. Background overlay
+   27. Testimonials author
+   28. Clients logo
+   29. Video background
+   30. Background parallax
+   31. Portfolio top offset
+   32. Sticky column paddings
+   33. Skills columns
+   34. Price borders
+
+   ========================================================================== */
+</pre>
+			<p class="body-text-s text-color-black padding-top-30 text-center">If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+	<pre class="prettyprint linenums">
+/* ==========================================================================
+   10. Navigation
+   ========================================================================== */
+
+.nav-container {
+    overflow: hidden;
+    width: 100%;
+    height:     100vh;
+    min-height: 100vh;
+    margin:  0;
+    padding: 0;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    z-index: 9;
+    background-color: #111517;
+    transition: 1s cubic-bezier(.858, .01, .068, .99);
+    transition-delay: .7s;
+}
+
+.js-nav-active .nav-container {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    transition-delay: .13s;
+}
+</pre>
+		</section>
+
+		<section id="javascript" class="padding-top-120 container">	
+			<div class="text-center">
+				<h4 class="headline-xs text-color-black">3. JavaScript</h4>
+				<p class="body-text-s text-color-black margin-top-10">This template imports several Javascript files from plugins folder.</p>
+			</div>
+	<pre class="prettyprint">
+<span class="pln">assets</span><span class="pun">/</span><span class="pln"></span>
+    <span class="pun">├──</span><span class="pln"> ajax</span>
+    <span class="pun">├──</span><span class="pln"> css</span>
+    <span class="pun">├──</span><span class="pln"> images</span>
+    <span class="pun">├──</span><span class="pln"> js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> main.js</span>
+    <span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> plugins.js</span>
+    <span class="pun">├──</span><span class="pln"> webfonts</span>
+</pre>
+
+			<p class="body-text-s text-color-black padding-top-30 text-center">main.js scripts contain function, plugins initialize and handle javascript event. For example:</p>
+
+	<pre class="prettyprint linenums">
+$(function() {
+    &quot;use strict&quot;;
+
+    $(document).ready(function() {
+
+        /* 2. Animsition preloader */
+        $(&quot;.js-animsition-overlay&quot;).animsition({
+            inClass: 'overlay-slide-in-right',
+            outClass: 'overlay-slide-out-right',
+            inDuration: 1,
+            outDuration: 1500,
+            linkElement: '.js-animsition-link',
+            // e.g. linkElement: 'a:not([target=&quot;_blank&quot;]):not([href^=&quot;#&quot;])'
+            loading: false,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '&lt;img src=&quot;loading.svg&quot; /&gt;'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // &quot;browser&quot; option allows you to disable the &quot;animsition&quot; in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the &quot;animsition&quot; in a browser that does not support &quot;animation-duration&quot;.
+            overlay : true,
+            overlayClass : 'js-animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
+
+        ...
+
+    });
+
+    ...
+
+});
+</pre>
+		</section>
+
+		<section id="credits" class="container padding-top-120 padding-bottom-90">
+			<h4 class="headline-xs text-color-black text-center">4. Credits</h4>
+			<h4 class="headline-xxxs text-color-black padding-top-60">PLUGINS</h4>
+
+			<table class="text-color-black">
+				<thead>
+					<tr>
+						<th>Plugin Name</th>
+						<th>Version</th>
+						<th>Documentation</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="doc-bg">
+						<td>Swiper</td>
+						<td>5.4.1</td>
+						<td><a href="https://swiperjs.com/api/" target="_blank">Swiper</a></td>
+					</tr>
+					<tr>
+						<td>jQuery</td>
+						<td>2.2.0</td>
+						<td><a href="http://jquery.com/" target="_blank">jQuery</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Magnific Popup</td>
+						<td>1.1.0</td>
+						<td><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a></td>
+					</tr>
+					<tr>
+						<td>Animsition</td>
+						<td>4.0.2</td>
+						<td><a href="http://blivesta.github.io/animsition" target="_blank">Animsition</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Normalize.css</td>
+						<td>8.0.1</td>
+						<td><a href="https://github.com/necolas/normalize.css" target="_blank">Normalize</a></td>
+					</tr>
+					<tr>
+						<td>Font Awesome</td>
+						<td>5.5.0</td>
+						<td><a href="https://fontawesome.com" target="_blank">Font Awesome</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Isotope</td>
+						<td>3.0.6</td>
+						<td><a href="https://isotope.metafizzy.co" target="_blank">Isotope</a></td>
+					</tr>
+                    <tr>
+                        <td>Locomotive Scroll</td>
+                        <td>3.5.4</td>
+                        <td><a href="https://github.com/locomotivemtl/locomotive-scroll" target="_blank">Locomotive Scroll</a></td>
+                    </tr>
+                    <tr class="doc-bg">
+                        <td>Splitting.js</td>
+                        <td>-</td>
+                        <td><a href="https://splitting.js.org/" target="_blank">Splitting.js</a></td>
+                    </tr>
+                    <tr>
+                        <td>jQuery.marquee</td>
+                        <td>-</td>
+                        <td><a href="https://github.com/aamirafridi/jQuery.Marquee" target="_blank">jQuery.marquee</a></td>
+                    </tr>
+                    <tr class="doc-bg">
+                        <td>SplitLines</td>
+                        <td>-</td>
+                        <td><a href="https://github.com/jeremyharris/split_lines" target="_blank">SplitLines</a></td>
+                    </tr>
+				</tbody>
+			</table>
+
+			<p class="body-text-s text-color-black padding-top-30 text-center">Template used the following images and fonts as listed.</p>
+			<table class="text-color-black">
+				<thead>
+					<tr class="doc-bg">
+						<th>Source Name</th>
+						<th>Source Url</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Pexels</td>
+						<td><a href="https://www.pexels.com/" target="_blank">www.pexels.com</a></td>
+					</tr>
+					<tr class="doc-bg">
+						<td>Google Fonts</td>
+						<td><a href="https://fonts.google.com/" target="_blank">fonts.google.com</a></td>
+					</tr>
+                    <tr class="doc-bg">
+                        <td>Unsplash</td>
+                        <td><a href="https://unsplash.com" target="_blank">unsplash.com</a></td>
+                    </tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section id="support" class="padding-top-bottom-120 doc-bg">
+			<div class="container text-center">
+				<h4 class="headline-xs text-color-black">5. Support</h4>
+				<p class="body-text-m text-color-black margin-top-30">Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. I'll do my best to assist. If you have a more general question relating to the templates on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+			</div>
+		</section>
+
+		<!-- Javascript -->
+		<script src="js/plugins.js"></script>
+		<script src="js/prettify.js"></script>
+		<script src="js/theme.js"></script>
+	</body>
+</html>
